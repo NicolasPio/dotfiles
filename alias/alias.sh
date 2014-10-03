@@ -15,6 +15,8 @@ alias gl="git log --abbrev-commit --graph"
 alias gc="git commit -am"
 alias grm="git rm"
 alias grsh="git reset HEAD"
+alias grt="git remote"
+alias grta="git remote add"
 
 # APT
 alias api="sudo apt-get install"
