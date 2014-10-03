@@ -40,7 +40,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ips="ifconfig | grep inet\ end"
 
 # Copy SSH public key
-alias sshkey="cat .ssh/id_rsa.pub | xclip | echo 'SSH public key copied to pasteboard'"
+alias sshkey="cat ~/.ssh/id_rsa.pub | xclip | echo 'SSH public key copied to pasteboard'"
 
 # Reload Zsh
 alias reload!='. ~/.zshrc'
