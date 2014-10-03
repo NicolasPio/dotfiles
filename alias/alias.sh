@@ -18,6 +18,7 @@ alias grsh="git reset HEAD"
 alias grt="git remote"
 alias grta="git remote add"
 alias gp="git pull"
+alias gps="git push"
 
 # APT
 alias api="sudo apt-get install"
