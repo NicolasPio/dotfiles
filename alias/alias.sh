@@ -2,7 +2,7 @@
 alias server="python -m SimpleHTTPServer"
 
 # List
-alias ls="ls --color"
+alias ls="ls"
 
 alias ..="cd .."
 alias .~="cd ~"
@@ -31,18 +31,22 @@ alias aps="apt-cache search"
 alias apl="dpkg -l"
 alias c="clear"
 
-# copy
-alias xclip="xclip -selection c"
+if [[ $(uname) == "Linux" ]]; then
+	alias copy="xclip -selection c"
+	alias ips="ifconfig | grep inet\ end"
+elif [[ $(uname) == "Darwin" ]]; then
+	alias copy="pbcopy"
+	alias ips="ifconfig | grep inet\ 1"
+fi
 
 # Stopwatch
 alias timer="echo "Timer started. Stop with Ctrl-D." && date && time cat && date"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ips="ifconfig | grep inet\ end"
 
 # Copy SSH public key
-alias sshkey="cat ~/.ssh/id_rsa.pub | xclip | echo 'SSH public key copied to pasteboard'"
+alias sshkey="cat ~/.ssh/id_rsa.pub | copy | echo 'SSH public key copied to pasteboard'"
 
 # Reload Zsh
-alias reload!='. ~/.zshrc'
+alias zreload='. ~/.zshrc'
