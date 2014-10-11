@@ -39,7 +39,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/sbin:/usr/local/bin/:/sbin/usr/local/bin:/usr/bin:/bin:/home/pio/Software/Android/sdk/platform-tools/:/home/pio/Software/Android/sdk/tools/"
+export PATH="/sbin:/usr/sbin/:/usr/local/bin:/sbin/:/sbin/usr/local/bin:/usr/bin:/bin:/home/pio/Software/Android/sdk/platform-tools/:/home/pio/Software/Android/sdk/tools/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -58,4 +58,9 @@ export PATH="/sbin:/usr/local/bin/:/sbin/usr/local/bin:/usr/bin:/bin:/home/pio/S
 source $HOME/dotfiles/alias/alias.sh
 
 # info system
-archey
+if [[ $(uname) == "Linux" ]]; then
+	# info system on startup
+	archey
+elif [[ $(uname) == "Darwin" ]]; then
+	./../archey-osx.sh
+fi
