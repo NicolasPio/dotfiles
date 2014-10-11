@@ -39,7 +39,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/sbin/usr/local/bin:/usr/bin:/bin:/home/pio/Software/Android/sdk/platform-tools/:/home/pio/Software/Android/sdk/tools/"
+export PATH="/sbin:/usr/local/bin/:/sbin/usr/local/bin:/usr/bin:/bin:/home/pio/Software/Android/sdk/platform-tools/:/home/pio/Software/Android/sdk/tools/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
