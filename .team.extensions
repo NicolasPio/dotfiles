@@ -1,0 +1,122 @@
+[
+    {
+        "id": "brackets-apache-syntax"
+    },
+    {
+        "id": "brackets-editorconfig"
+    },
+    {
+        "id": "brackets-scss-lint"
+    },
+    {
+        "id": "brackets-semicenter"
+    },
+    {
+        "id": "busykai.indent-right"
+    },
+    {
+        "id": "dannymoerkerke.brackets-codeintel"
+    },
+    {
+        "id": "deddy.additional-right-click-menu"
+    },
+    {
+        "id": "dehats.annotate"
+    },
+    {
+        "id": "ivogabe.icons"
+    },
+    {
+        "id": "jade"
+    },
+    {
+        "id": "jonwolfe.file-tree-exclude"
+    },
+    {
+        "id": "pflynn.brackets.commands.guide"
+    },
+    {
+        "id": "react_jsx"
+    },
+    {
+        "id": "winek.brackets-chain-indents"
+    },
+    {
+        "id": "angularui.angularjs"
+    },
+    {
+        "id": "brackets-indent-guides"
+    },
+    {
+        "id": "enturn.quick-search"
+    },
+    {
+        "id": "brackets-php-syntax-hint"
+    },
+    {
+        "id": "brackets-pep8"
+    },
+    {
+        "id": "funcdocr"
+    },
+    {
+        "id": "brackets-grunt"
+    },
+    {
+        "id": "brackets-quick-markup"
+    },
+    {
+        "id": "brackets-angularjs-codehints"
+    },
+    {
+        "id": "brackets-wp-functions-hint"
+    },
+    {
+        "id": "gruehle.markdown-preview"
+    },
+    {
+        "id": "brackets-jshint"
+    },
+    {
+        "id": "camden.jshint"
+    },
+    {
+        "id": "brackets-vimderbar"
+    },
+    {
+        "id": "genuitec.team-extensions"
+    },
+    {
+        "id": "brackets-ruler"
+    },
+    {
+        "id": "ws-sanitizer"
+    },
+    {
+        "id": "edc.brackets-snippets"
+    },
+    {
+        "id": "nicolo-ribaudo.brackets-svg-font"
+    },
+    {
+        "id": "dnbard.documents-toolbar"
+    },
+    {
+        "id": "camden.w3cvalidation"
+    },
+    {
+        "id": "brackets-code-folding"
+    },
+    {
+        "id": "brackets-emmet"
+    },
+    {
+        "id": "hirse.outline-list"
+    },
+    {
+        "id": "zaggino.brackets-git"
+    },
+    {
+        "id": "adobe.brackets.extract"
+    }
+]
