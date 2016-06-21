@@ -9,6 +9,9 @@ set clipboard=unnamed
 if has("gui_running")
 	set guioptions-=m
 	set guioptions-=r
+	set guioptions-=T
+	set transparency=0
+	set guifont=Hack:h14
 endif
 
 " Column
@@ -93,3 +96,7 @@ let g:syntastic_javascript_eslint_args = '--reporter=compact'
 let g:syntastic_javascript_checkers = ['eslint']
 
 set lazyredraw
+set cursorline
+
+" Remove buffer top bar
+let g:airline#extensions#tabline#enabled = 0
