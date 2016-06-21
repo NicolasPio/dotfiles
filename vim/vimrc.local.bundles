@@ -1,1 +1,16 @@
-.vimrc.local.bundles
+"*****************************************************************************
+"" NeoBundle user install packages
+"*****************************************************************************
+
+NeoBundle 'joshdick/onedark.vim'
+NeoBundle 'joshdick/airline-onedark.vim'
+NeoBundle 'easymotion/vim-easymotion'
+NeoBundle 'junegunn/goyo.vim'
+NeoBundle 'dhruvasagar/vim-table-mode'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'ternjs/tern_for_vim'
+NeoBundle 'mhinz/vim-startify'

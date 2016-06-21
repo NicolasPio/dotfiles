@@ -1,1 +1,95 @@
-.vimrc.local
+" Color
+colorscheme onedark
+set background=dark
+
+" Clipboard share with the system
+set clipboard=unnamed
+
+" Remove gvim menu
+if has("gui_running")
+	set guioptions-=m
+	set guioptions-=r
+endif
+
+" Column
+set colorcolumn=80
+autocmd FileType * setlocal colorcolumn=+1
+autocmd FileType nerdtree setlocal colorcolumn=""
+
+set relativenumber
+
+" Display invisible characters
+set list
+set listchars=eol:¬
+set listchars+=tab:>·
+set listchars+=nbsp:.
+set listchars+=trail:~
+
+set noshowmode
+
+"Nerdtree
+let g:NERDTreeWinSize = 30
+
+" Easymotion
+"
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-overwin-f2)
+" - Search
+map  <SPACE> <Plug>(easymotion-sn)
+omap <SPACE> <Plug>(easymotion-tn)
+
+" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
+" Without these mappings, `n` & `N` works fine. (These mappings just provide
+" different highlight method and have some other features )
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+"
+" End Easymotion
+
+" vim-table-mode
+let g:table_mode_corner="|"
+
+" NeoComplete auto run
+let g:neocomplete#enable_at_startup = 1
+
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+
+" Enable heavy omni completion.
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
+endif
+
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" Snippets
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+let g:neosnippet#snippets_directory
+let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+
+" End neosnippet
+
+" Xo lint
+let g:syntastic_javascript_eslint_generic = 1
+let g:syntastic_javascript_eslint_exec = 'xo'
+let g:syntastic_javascript_eslint_args = '--reporter=compact'
+let g:syntastic_javascript_checkers = ['eslint']
+
+set lazyredraw
