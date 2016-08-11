@@ -1,9 +1,6 @@
 # Static server
 alias server="python -m SimpleHTTPServer"
 
-# List
-alias ls="ls --color"
-
 alias ..="cd .."
 alias ~~="cd ~"
 
