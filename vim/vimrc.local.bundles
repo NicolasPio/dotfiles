@@ -2,9 +2,7 @@
 "" NeoBundle user install packages
 "*****************************************************************************
 
-NeoBundle 'joshdick/onedark.vim'
 NeoBundle 'easymotion/vim-easymotion'
-NeoBundle 'dhruvasagar/vim-table-mode'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet'
