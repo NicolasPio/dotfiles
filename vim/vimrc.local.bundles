@@ -2,6 +2,7 @@
 "" NeoBundle user install packages
 "*****************************************************************************
 
+NeoBundle 'joshdick/onedark.vim'
 NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'Shougo/neocomplete.vim'
@@ -10,6 +11,7 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'mhinz/vim-startify'
-NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'junegunn/goyo.vim'

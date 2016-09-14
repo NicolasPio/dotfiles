@@ -7,16 +7,14 @@ alias ~~="cd ~"
 # GIT
 alias ga="git add"
 alias gs="git status -s"
-alias gdh="git diff HEAD"
 alias gl="git log --abbrev-commit --graph"
 alias gc="git commit"
 alias gcm="git commit -m"
 alias grm="git rm"
-alias grsh="git reset HEAD"
-alias grt="git remote"
-alias grta="git remote add"
 alias gp="git pull"
 alias gps="git push"
+alias gck="git checkout"
+alias gckm="git checkout master"
 
 # APT
 alias api="sudo apt-get install"
@@ -36,9 +34,6 @@ elif [[ $(uname) == "Darwin" ]]; then
 	alias copy="pbcopy"
 	alias ips="ifconfig | grep inet\ 1"
 fi
-
-# Stopwatch
-alias timer="echo "Timer started. Stop with Ctrl-D." && date && time cat && date"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"

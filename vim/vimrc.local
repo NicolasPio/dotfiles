@@ -1,13 +1,8 @@
 " Color
-set background=light
 colorscheme solarized
+set background=light
 
 set nocompatible
-
-" Leader key
-" let mapleader = "\<Space>"
-
-" Clipboard share with the system
 set clipboard=unnamed
 
 " Remove gvim menu
@@ -22,7 +17,6 @@ endif
 " Column
 set colorcolumn=80
 autocmd FileType * setlocal colorcolumn=+1
-autocmd FileType nerdtree setlocal colorcolumn=""
 
 set relativenumber
 " set nonumber
@@ -32,6 +26,7 @@ set noshowmode
 " =============================================================================
 let g:NERDTreeWinSize = 30
 map <Leader>n :NERDTreeToggle<CR>
+autocmd vimenter * NERDTreeClose
 
 " CtrlP
 " =============================================================================
@@ -43,8 +38,8 @@ let g:ctrlp_map = '<leader>o'
 " `s{char}{label}`
 nmap s <Plug>(easymotion-overwin-f2)
 " - Search
-map  <Leader><SPACE> <Plug>(easymotion-sn)
-omap <Leader><SPACE> <Plug>(easymotion-tn)
+map  <SPACE> <Plug>(easymotion-sn)
+omap <SPACE> <Plug>(easymotion-tn)
 
 " These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
 " Without these mappings, `n` & `N` works fine. (These mappings just provide
@@ -101,7 +96,6 @@ endif
 set lazyredraw
 set cursorline
 set ttyfast
-set synmaxcol=128
 
 " Remove buffer top bar
 let g:airline#extensions#tabline#enabled = 0
@@ -118,9 +112,14 @@ let g:startify_custom_header = []
 
 let g:session_autoload = 0
 
+autocmd vimenter * Startify
+
 " Fix session color broken
 set sessionoptions=blank,curdir,folds,help,tabpages,winpos
 
 " Syntastic
 " =============================================================================
 let g:syntastic_javascript_checkers = ['eslint']
+
+" Auto remove trailing whitespace
+autocmd BufWritePre * %s/\s\+$//e
