@@ -62,10 +62,6 @@ NeoBundle 'Shougo/vimproc.vim', {
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'xolox/vim-session'
 
-if v:version >= 703
-  NeoBundle 'Shougo/vimshell.vim'
-endif
-
 if v:version >= 704
   "" Snippets
   NeoBundle 'SirVer/ultisnips'
@@ -74,11 +70,8 @@ endif
 
 NeoBundle 'honza/vim-snippets'
 
-"" Color
-NeoBundle 'tomasr/molokai'
-
 "" Vim-Bootstrap Updater by sherzberg
-NeoBundle 'avelino/vim-bootstrap-updater'
+" NeoBundle 'avelino/vim-bootstrap-updater'
 
 "" Custom bundles
 "" Javascript Bundle
@@ -88,7 +81,6 @@ NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'amirh/HTML-AutoCloseTag'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'gorodinskiy/vim-coloresque'
-NeoBundle 'tpope/vim-haml'
 NeoBundle 'mattn/emmet-vim'
 
 "" PHP Bundle
@@ -152,8 +144,8 @@ set shell=/bin/sh
 
 " session management
 let g:session_directory = "~/.vim/session"
-let g:session_autoload = "no"
-let g:session_autosave = "no"
+let g:session_autoload = "yes"
+let g:session_autosave = "yes"
 let g:session_command_aliases = 1
 
 "*****************************************************************************
@@ -164,9 +156,6 @@ set ruler
 set number
 
 let no_buffers_menu=1
-if !exists('g:not_finsh_neobundle')
-  colorscheme molokai
-endif
 
 set mousemodel=popup
 set t_Co=256
@@ -447,8 +436,6 @@ augroup vimrc-javascript
   autocmd!
   autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab softtabstop=4 smartindent
 augroup END
-
-
 
 "" Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
